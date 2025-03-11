@@ -4,16 +4,19 @@
 
 void setup() {
   // Set pin mode
-  pinMode(LEDB,OUTPUT);
-  pinMode(LEDR,OUTPUT);
+  pinMode(LEDB, OUTPUT);
+  pinMode(LEDR, OUTPUT);
 }
 
 void loop() {
-  delay(100);
-// you can set the delay time by adjusting the parameter of delay();
-  digitalWrite(LEDB,HIGH);
-  digitalWrite(LEDR,LOW);
-  delay(100);
-  digitalWrite(LEDB,LOW);
-  digitalWrite(LEDR,HIGH);
+  for (int brightness = 0; brightness <= 255; brightness++) {
+    analogWrite(LEDB, brightness);
+    analogWrite(LEDR, 255 - brightness);
+    delay(2);
+  }
+  for (int brightness = 255; brightness >= 0; brightness--) {
+    analogWrite(LEDB, brightness);
+    analogWrite(LEDR, 255 - brightness);
+    delay(2);
+  }
 }
