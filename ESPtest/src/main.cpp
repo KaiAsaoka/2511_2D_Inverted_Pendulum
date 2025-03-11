@@ -1,15 +1,19 @@
 #include <Arduino.h>
-#define LED 2
+#define LEDB 2
+#define LEDR 8
 
 void setup() {
   // Set pin mode
-  pinMode(LED,OUTPUT);
+  pinMode(LEDB,OUTPUT);
+  pinMode(LEDR,OUTPUT);
 }
 
 void loop() {
   delay(100);
 // you can set the delay time by adjusting the parameter of delay();
-  digitalWrite(LED,HIGH);
+  digitalWrite(LEDB,HIGH);
+  digitalWrite(LEDR,LOW);
   delay(100);
-  digitalWrite(LED,LOW);
+  digitalWrite(LEDB,LOW);
+  digitalWrite(LEDR,HIGH);
 }
