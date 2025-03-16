@@ -3,15 +3,15 @@
 
 class Encoder {
 public:
-    Encoder(int miso, int clk, int cs, int mosi);
+    Encoder(int MISO, int CLK, int CS, int MOSI);
     void begin();
     float readAngle();
 
 private:
-    float miso;
-    float clk;
-    float cs;
-    float mosi;
+    float MISO;
+    float CLK;
+    float CS;
+    float MOSI;
 };
 
 #endif // Encoder_H
