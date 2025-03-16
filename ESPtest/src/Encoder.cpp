@@ -1,10 +1,20 @@
-#include "ENC.h"
+#include "Encoder.h"
 #include <Arduino.h>
 #include <SPI.h>
 
-ENC::ENC(int miso, int clk, int cs, int mosi) : miso(miso), clk(clk), cs(cs), mosi(mosi) {}
+Encoder::Encoder(int miso, int clk, int cs, int mosi) : miso(miso), clk(clk), cs(cs), mosi(mosi) {}
 
-float ENC::readAngle() {
+void Encoder::begin() {  
+  // Configure encoder
+  pinMode(cs, OUTPUT);
+  digitalWrite(cs, HIGH);  // Deselect encoder by default
+  SPI.begin(clk, miso, mosi, cs);
+  SPI.beginTransaction(SPISettings(10000000, MSBFIRST, SPI_MODE1));
+  Serial.println("AS5147 SPI Encoder Initialized");
+}
+
+
+float Encoder::readAngle() {
   // For AS5147 the command frame is 16 bits:
   // Bit 15: Parity bit (even parity).
   // Bit 14: R/W flag (1 for read).
@@ -23,7 +33,8 @@ float ENC::readAngle() {
   response = SPI.transfer16(0x3FFF);
   
   digitalWrite(cs, HIGH);
-  
-  // The AS5147 response should contain the 14-bit angle in its lower 14 bits.
-  return response & 0x3FFF; // mask non output bits 0b0011 1111 1111 1111
+
+  float angle = float(response & 0x3FFF) / 16384.00 * 360.00;
+
+  return angle;
 }
