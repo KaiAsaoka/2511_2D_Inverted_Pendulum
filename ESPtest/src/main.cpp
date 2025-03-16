@@ -7,16 +7,12 @@
 #define ENC_CS   15    // Chip Select (active LOW)
 #define ENC_MOSI 13    // MOSI pin for encoder communication
 
-// Function to calculate even parity for the lower 15 bits of a 16-bit word.
-uint8_t calcEvenParity(uint16_t data) {
-  uint8_t parity = 0;
-  // Calculate parity over bits 0 through 14 (don't include the parity bit itself)
-  for (uint8_t i = 0; i < 15; i++) {
-    if (data & (1 << i))
-      parity++;
+
+void printBinary16(uint16_t n) {
+  for (int i = 15; i >= 0; i--) {
+    Serial.print((n >> i) & 1);
   }
-  // Return 1 if the number of 1s is odd (so that setting the parity bit makes total even)
-  return (parity & 1);
+  Serial.println();
 }
 
 unsigned int readAngle() {
@@ -24,25 +20,18 @@ unsigned int readAngle() {
   // Bit 15: Parity bit (even parity).
   // Bit 14: R/W flag (1 for read).
   // Bits 13:0: Register address (0x3FFF for the angle register).
-  uint16_t command = 0;
-  command = (1 << 14) | (0x3FFF & 0x3FFF); // Set R/W bit and address
-  
-  // Calculate parity over lower 15 bits and set bit15 accordingly.
-  if (calcEvenParity(command))
-    command |= 0x8000;  // Set parity bit if needed. 1000 0000 0000 0000
-  else
-    command &= 0x7FFF;  // Ensure parity bit is clear otherwise. 0111 1111 1111 1111
-  
+ 
   uint16_t response;
   // Begin SPI transaction
   digitalWrite(ENC_CS, LOW);
   
+  // printBinary16(command);
   // Send command word; using two-step transfer is possible:
-  SPI.transfer16(command);
+  
   //Serial.print("Command: 0x");
   //Serial.println(command, HEX);
   // A dummy transfer to read back the response:
-  response = SPI.transfer16(0x0000);
+  response = SPI.transfer16(0x3FFF);
   
   digitalWrite(ENC_CS, HIGH);
   
@@ -70,12 +59,10 @@ void setup() {
 
 void loop() {
   // Read the 14-bit angle
-  unsigned int angle = readAngle();
+  float angle = float(readAngle()) / 16384.00 * 360.00;
   
   Serial.print("Angle: ");
   Serial.println(angle);
 
-
-  
   delay(100);
 }
