@@ -1,6 +1,7 @@
 #include "Encoder.h"
 #include <Arduino.h>
 #include <SPI.h>
+#include <matplotlibcpp.h>
 
 Encoder::Encoder(int MISO, int CLK, int CS, int MOSI) : MISO(MISO), CLK(CLK), CS(CS), MOSI(MOSI) {}
 

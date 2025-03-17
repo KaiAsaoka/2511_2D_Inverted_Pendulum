@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E841A967-F69A-3051-A3E8-3B6E4F6BCDD7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external" "-BC:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external/build" --check-stamp-file "C:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\CMakeFiles\4.0.0-rc4\CMakeCCompiler.cmake;C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\CMakeFiles\4.0.0-rc4\CMakeCXXCompiler.cmake;C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\CMakeFiles\4.0.0-rc4\CMakeRCCompiler.cmake;C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\CMakeFiles\4.0.0-rc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external" "-BC:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external/build" --check-stamp-file "C:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\CMakeFiles\4.0.0-rc4\CMakeCCompiler.cmake;C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\CMakeFiles\4.0.0-rc4\CMakeCXXCompiler.cmake;C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\CMakeFiles\4.0.0-rc4\CMakeRCCompiler.cmake;C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\CMakeFiles\4.0.0-rc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external" "-BC:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external/build" --check-stamp-file "C:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\CMakeFiles\4.0.0-rc4\CMakeCCompiler.cmake;C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\CMakeFiles\4.0.0-rc4\CMakeCXXCompiler.cmake;C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\CMakeFiles\4.0.0-rc4\CMakeRCCompiler.cmake;C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\CMakeFiles\4.0.0-rc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external" "-BC:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external/build" --check-stamp-file "C:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\CMakeFiles\4.0.0-rc4\CMakeCCompiler.cmake;C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\CMakeFiles\4.0.0-rc4\CMakeCXXCompiler.cmake;C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\CMakeFiles\4.0.0-rc4\CMakeRCCompiler.cmake;C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\CMakeFiles\4.0.0-rc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\ZERO_CHECK.vcxproj">
+      <Project>{029263F6-2E8F-3908-A9F7-2CD616597F64}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-build\animation.vcxproj">
+      <Project>{6C1F6CE8-DA4F-30E4-A10B-30D437674095}</Project>
+      <Name>animation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-build\bar.vcxproj">
+      <Project>{B8AB1548-AFA3-353B-A8B8-1A51DBEC9E2E}</Project>
+      <Name>bar</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-build\basic.vcxproj">
+      <Project>{720A32E8-3545-3D3F-A845-E295CB4120FA}</Project>
+      <Name>basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-build\colorbar.vcxproj">
+      <Project>{C7A0E3F8-834F-340D-B6A4-0A806184B784}</Project>
+      <Name>colorbar</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-build\contour.vcxproj">
+      <Project>{7BCE3B84-E158-3995-AB6D-A8BCCE2EF05C}</Project>
+      <Name>contour</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-build\fill.vcxproj">
+      <Project>{B74584E5-3B62-3E00-B87D-BD22650FBD14}</Project>
+      <Name>fill</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-build\fill_inbetween.vcxproj">
+      <Project>{5F306235-FAD6-3DD8-982A-45F0436F6327}</Project>
+      <Name>fill_inbetween</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-build\lines3d.vcxproj">
+      <Project>{9704B0A5-D67E-3155-80B4-C59CB48C9235}</Project>
+      <Name>lines3d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-build\minimal.vcxproj">
+      <Project>{D03CC5AD-4666-39EB-9220-71B59CA31798}</Project>
+      <Name>minimal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-build\modern.vcxproj">
+      <Project>{3A4394BB-8DBE-34ED-A011-7F5DA5C001B7}</Project>
+      <Name>modern</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-build\nonblock.vcxproj">
+      <Project>{549E1FC7-E454-30C9-ACDD-14FD122F55BB}</Project>
+      <Name>nonblock</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-build\spy.vcxproj">
+      <Project>{961144E0-42D2-3295-8171-5F7D3D73917D}</Project>
+      <Name>spy</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-build\subplot2grid.vcxproj">
+      <Project>{19D9849E-753C-3CC7-B54A-049E239F0AD4}</Project>
+      <Name>subplot2grid</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-build\surface.vcxproj">
+      <Project>{306CC647-FEA0-342A-9424-BED50943CBE0}</Project>
+      <Name>surface</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-build\update.vcxproj">
+      <Project>{1FDCBB99-2EE2-3435-ACE8-4BB068784EA4}</Project>
+      <Name>update</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-build\xkcd.vcxproj">
+      <Project>{BF54A485-543E-3687-B573-83EB21746C02}</Project>
+      <Name>xkcd</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

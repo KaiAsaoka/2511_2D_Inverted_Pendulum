@@ -1,0 +1,3 @@
+C:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external/build/_deps/matplotlibcpp-subbuild/CMakeFiles/matplotlibcpp-populate.dir
+C:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external/build/_deps/matplotlibcpp-subbuild/CMakeFiles/ALL_BUILD.dir
+C:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external/build/_deps/matplotlibcpp-subbuild/CMakeFiles/ZERO_CHECK.dir

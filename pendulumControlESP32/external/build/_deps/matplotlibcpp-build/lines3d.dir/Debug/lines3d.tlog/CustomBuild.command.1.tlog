@@ -1,0 +1,10 @@
+^C:\USERS\KASAOKA\ONEDRIVE - UBC\UBC NOTES\Y4W2\ENPH 459\2511_2D_INVERTED_PENDULUM\PENDULUMCONTROLESP32\EXTERNAL\BUILD\_DEPS\MATPLOTLIBCPP-SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external" "-BC:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external/build" --check-stamp-file "C:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external/build/_deps/matplotlibcpp-build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

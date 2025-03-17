@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-src\examples\modern.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{796932C1-DC40-3105-8F8C-1EF6BFA1B4C2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

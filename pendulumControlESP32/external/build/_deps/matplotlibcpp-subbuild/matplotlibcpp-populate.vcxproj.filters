@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-subbuild\CMakeFiles\38f4029631c847b9d4668514fe008006\matplotlibcpp-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-subbuild\CMakeFiles\38f4029631c847b9d4668514fe008006\matplotlibcpp-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-subbuild\CMakeFiles\38f4029631c847b9d4668514fe008006\matplotlibcpp-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-subbuild\CMakeFiles\38f4029631c847b9d4668514fe008006\matplotlibcpp-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-subbuild\CMakeFiles\38f4029631c847b9d4668514fe008006\matplotlibcpp-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-subbuild\CMakeFiles\38f4029631c847b9d4668514fe008006\matplotlibcpp-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-subbuild\CMakeFiles\38f4029631c847b9d4668514fe008006\matplotlibcpp-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-subbuild\CMakeFiles\38f4029631c847b9d4668514fe008006\matplotlibcpp-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-subbuild\CMakeFiles\b5d8f3240a1841e3cd56b583c5e13c49\matplotlibcpp-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-subbuild\CMakeFiles\225c7fcd5c0a64648d0f2e0874aebedf\matplotlibcpp-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\external\build\_deps\matplotlibcpp-subbuild\CMakeFiles\matplotlibcpp-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{390C1C24-4DD5-3427-868E-6205B4E5EE32}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

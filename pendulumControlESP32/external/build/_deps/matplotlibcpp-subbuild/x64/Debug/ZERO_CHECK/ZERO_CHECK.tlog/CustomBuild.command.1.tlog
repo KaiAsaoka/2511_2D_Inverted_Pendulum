@@ -1,0 +1,10 @@
+^C:\USERS\KASAOKA\ONEDRIVE - UBC\UBC NOTES\Y4W2\ENPH 459\2511_2D_INVERTED_PENDULUM\PENDULUMCONTROLESP32\EXTERNAL\BUILD\_DEPS\MATPLOTLIBCPP-SUBBUILD\CMAKEFILES\225C7FCD5C0A64648D0F2E0874AEBEDF\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external/build/_deps/matplotlibcpp-subbuild" "-BC:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external/build/_deps/matplotlibcpp-subbuild" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/kasaoka/OneDrive - UBC/UBC Notes/Y4W2/ENPH 459/2511_2D_Inverted_Pendulum/pendulumControlESP32/external/build/_deps/matplotlibcpp-subbuild/matplotlibcpp-populate.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

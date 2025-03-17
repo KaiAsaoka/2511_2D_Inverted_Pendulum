@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CMakePredefinedTargets", "CMakePredefinedTargets", "{8CC74CCF-5CFC-3544-9F9F-A4C77AE27D1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExternalProjectTargets", "ExternalProjectTargets", "{4422D56D-6046-3386-A186-8AB148903307}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "matplotlibcpp-populate", "ExternalProjectTargets\matplotlibcpp-populate", "{60C0134E-5672-3EA9-A194-546F2DB4BFE7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{E30D4C8D-BF68-30E4-98AB-334447BA174E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CFA8E3DB-D3F8-35B4-9B85-A954BC5E4A41} = {CFA8E3DB-D3F8-35B4-9B85-A954BC5E4A41}
+		{D7BFF548-A8D0-3D4C-9417-D48FBDE57ADF} = {D7BFF548-A8D0-3D4C-9417-D48FBDE57ADF}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "ZERO_CHECK.vcxproj", "{CFA8E3DB-D3F8-35B4-9B85-A954BC5E4A41}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "matplotlibcpp-populate", "matplotlibcpp-populate.vcxproj", "{D7BFF548-A8D0-3D4C-9417-D48FBDE57ADF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CFA8E3DB-D3F8-35B4-9B85-A954BC5E4A41} = {CFA8E3DB-D3F8-35B4-9B85-A954BC5E4A41}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E30D4C8D-BF68-30E4-98AB-334447BA174E}.Debug|x64.ActiveCfg = Debug|x64
+		{CFA8E3DB-D3F8-35B4-9B85-A954BC5E4A41}.Debug|x64.ActiveCfg = Debug|x64
+		{CFA8E3DB-D3F8-35B4-9B85-A954BC5E4A41}.Debug|x64.Build.0 = Debug|x64
+		{D7BFF548-A8D0-3D4C-9417-D48FBDE57ADF}.Debug|x64.ActiveCfg = Debug|x64
+		{D7BFF548-A8D0-3D4C-9417-D48FBDE57ADF}.Debug|x64.Build.0 = Debug|x64
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E30D4C8D-BF68-30E4-98AB-334447BA174E} = {8CC74CCF-5CFC-3544-9F9F-A4C77AE27D1F}
+		{CFA8E3DB-D3F8-35B4-9B85-A954BC5E4A41} = {8CC74CCF-5CFC-3544-9F9F-A4C77AE27D1F}
+		{60C0134E-5672-3EA9-A194-546F2DB4BFE7} = {4422D56D-6046-3386-A186-8AB148903307}
+		{D7BFF548-A8D0-3D4C-9417-D48FBDE57ADF} = {60C0134E-5672-3EA9-A194-546F2DB4BFE7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17748296-E284-38ED-9DC6-FE7619E8F7BF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

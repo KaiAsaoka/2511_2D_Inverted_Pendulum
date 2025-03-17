@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\kasaoka\OneDrive - UBC\UBC Notes\Y4W2\ENPH 459\2511_2D_Inverted_Pendulum\pendulumControlESP32\build\CMakeFiles\39ec873fc6d47bb551a5a31f8e383a57\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8803786C-5826-3400-8122-B4B10F8D81A7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
