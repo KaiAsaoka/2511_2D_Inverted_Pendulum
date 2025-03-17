@@ -1,0 +1,3 @@
+[submodule "pendulumControlESP32"]
+	path = pendulumControlESP32
+	url = https://github.com/KaiAsaoka/pendulum-control-esp32
